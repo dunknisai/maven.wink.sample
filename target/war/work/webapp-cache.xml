@@ -1,0 +1,35 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>index.jsp</string>
+          <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/application</string>
+          <string>META-INF/MANIFEST.MF</string>
+          <string>WEB-INF/classes/com/ibm/swattools/wink/sample/Ticket.class</string>
+          <string>WEB-INF/classes/com/ibm/swattools/wink/sample/GridServlet.class</string>
+          <string>WEB-INF/classes/com/ibm/swattools/wink/sample/Tickets.class</string>
+          <string>WEB-INF/classes/META-INF/objectgrid.xml</string>
+          <string>WEB-INF/lib/wink-common-1.0-incubating.jar</string>
+          <string>WEB-INF/lib/slf4j-api-1.5.8.jar</string>
+          <string>WEB-INF/lib/slf4j-simple-1.5.8.jar</string>
+          <string>WEB-INF/lib/jaxb-api-2.1.jar</string>
+          <string>WEB-INF/lib/stax-api-1.0-2.jar</string>
+          <string>WEB-INF/lib/activation-1.1.jar</string>
+          <string>WEB-INF/lib/jaxb-impl-2.1.4.jar</string>
+          <string>WEB-INF/lib/jsr311-api-1.0.jar</string>
+          <string>WEB-INF/lib/wink-component-test-support-1.0-incubating.jar</string>
+          <string>WEB-INF/lib/spring-2.5.jar</string>
+          <string>WEB-INF/lib/jcl-over-slf4j-1.5.11.jar</string>
+          <string>WEB-INF/lib/xmlunit-1.1.jar</string>
+          <string>WEB-INF/lib/wink-server-1.0-incubating.jar</string>
+          <string>WEB-INF/lib/commons-lang-2.3.jar</string>
+          <string>WEB-INF/lib/json-20090211.jar</string>
+          <string>WEB-INF/lib/wink-json-provider-1.0-incubating.jar</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+</webapp-structure>
