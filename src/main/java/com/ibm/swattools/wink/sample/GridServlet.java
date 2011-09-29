@@ -15,6 +15,7 @@ import com.ibm.websphere.objectgrid.TransactionAlreadyActiveException;
 import com.ibm.websphere.objectgrid.TransactionException;
 import com.ibm.websphere.objectgrid.UndefinedMapException;
 import com.ibm.websphere.objectgrid.plugins.TransactionCallbackException;
+import java.net.MalformedURLException;
 
 /**
  * Servlet implementation class GridServlet
@@ -33,13 +34,17 @@ public class GridServlet extends HttpServlet {
 	/**
 	 * @see Servlet#init(ServletConfig)
 	 */
+    @Override
 	public void init(ServletConfig config) throws ServletException {
+                super.init(config);
 		System.out.println("init grid");
 		try {
-			_og = ObjectGridManagerFactory.getObjectGridManager().createObjectGrid("SAMPLE", Thread.currentThread().getContextClassLoader().getResource("META-INF/objectgrid.xml"));
+			_og = ObjectGridManagerFactory.getObjectGridManager().createObjectGrid("SAMPLE", getServletContext().getResource("META-INF/objectgrid.xml"));
 		} catch (ObjectGridException e) {
 			e.printStackTrace();
-		}
+		} catch (MalformedURLException e){
+                        e.printStackTrace();
+                }
 		System.out.println("grid is up: " + _og);
 		
 		//populate the grid with stuff
